@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import image1 from 'src/pages/image/img.png';
+import Footer from '../components/Footer';
 
 const teamMembers = [
   {
     name: 'Team Member 1',
     position: 'President',
-    // image: image1,
     image: 'https://startupspheremait.vercel.app/static/media/WhatsApp_Image_2024-09-09_at_7.06.20_PM__1_-removebg-preview.fefbe9dfd14470a8cae5.png'
   },
   {
@@ -60,8 +59,8 @@ const Team = () => {
   };
 
   return (
-    <div className="pt-20 min-h-screen bg-black">
-      <div className="container mx-auto px-4 py-16">
+    <div className="pt-20 min-h-screen bg-black flex flex-col">
+      <div className="container mx-auto px-4 py-16 flex-grow">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -110,6 +109,7 @@ const Team = () => {
           ))}
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 };

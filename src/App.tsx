@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Team from './pages/Team';
 import Events from './pages/Events';
-import Developers from './pages/Developers';
+import Gallery from './pages/Gallery';
+import DepartmentDetails from './pages/DepartmentDetails';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/developers" element={<Developers />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/department/:name" element={<DepartmentDetails />} />
         </Routes>
       </div>
     </Router>

@@ -24,8 +24,8 @@ const Navbar = () => {
             <Link to="/events" className={`nav-link ${location.pathname === '/events' ? 'text-[#FEB90B]' : ''}`}>
               Events
             </Link>
-            <Link to="/developers" className={`nav-link ${location.pathname === '/developers' ? 'text-[#FEB90B]' : ''}`}>
-              Developers
+            <Link to="/gallery" className={`nav-link ${location.pathname === '/gallery' ? 'text-[#FEB90B]' : ''}`}>
+              Gallery
             </Link>
           </div>
         </div>

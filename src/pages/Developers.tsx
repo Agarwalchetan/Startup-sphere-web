@@ -6,7 +6,7 @@ const developers = [
   {
     name: 'Developer Name',
     role: 'Lead Developer',
-    image: 'https://startupspheremait.vercel.app/static/media/WhatsApp_Image_2024-09-09_at_7.06.20_PM__1_-removebg-preview.fefbe9dfd14470a8cae5.png',
+    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3',
     github: 'https://github.com',
     linkedin: 'https://linkedin.com',
     email: 'mailto:developer@example.com'

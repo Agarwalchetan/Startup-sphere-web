@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Users, Clock } from 'lucide-react';
 import RegistrationModal from '../components/RegistrationModal';
+import Footer from '../components/Footer';
 
 const events = [
   {
@@ -74,7 +75,7 @@ const Events = () => {
   };
 
   return (
-    <div className="pt-20 min-h-screen bg-black">
+    <div className="pt-20 min-h-screen bg-black flex flex-col">
       <RegistrationModal
         isOpen={showModal}
         onClose={() => setShowModal(false)}
@@ -82,7 +83,7 @@ const Events = () => {
         eventTitle={selectedEvent}
       />
       
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 flex-grow">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -161,6 +162,7 @@ const Events = () => {
           ))}
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 };
